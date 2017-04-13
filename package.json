@@ -6,7 +6,11 @@
   "author": "Trinh Minh Cuong",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.15.2",
     "nightmare": "^2.10.0",
-    "nightmare-inline-download": "^0.2.2"
+    "nightmare-inline-download": "^0.2.2",
+    "node-cron": "^1.1.3",
+    "nodemailer": "^4.0.0",
+    "xoauth2": "^1.2.0"
   }
 }

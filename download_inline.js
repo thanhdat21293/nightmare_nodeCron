@@ -4,9 +4,9 @@ var nightmare = Nightmare();
 
 var downloadInfo = nightmare
 	.goto('https://github.com/segmentio/nightmare')
-	.click('a[href="/segmentio/nightmare/archive/master.zip"]')
+	.click('img[alt="@reinpk"]')
 	// this will move the download to this file (relative to current directory)
-	.download('master.zip')
+	.download('master.png')
 	.end()
 	.then(function (val) {
 		console.log('DONE:', val)
