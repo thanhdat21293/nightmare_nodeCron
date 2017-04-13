@@ -10,8 +10,8 @@ const nightmare = Nightmare({
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'thanhdat21293@gmail.com',
-        pass: 'cimtmhahlgtggggg'
+        user: '1',
+        pass: '   '
     }
 });
 
