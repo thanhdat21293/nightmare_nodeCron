@@ -3,15 +3,14 @@ const cron = require('node-cron');
 const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
 const nightmare = Nightmare({
-	show: true,
 	dock: true
 });
 
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: '1',
-        pass: '   '
+        user: 'thanhdat21293@gmail.com',
+        pass: ''
     }
 });
 
@@ -42,11 +41,10 @@ nightmare
 
 
         let mailOptions = {
-			from: '"Thanh Dat ?" <thanhdat@gmail.com>', // sender address
-			to: 'thanhdat21293@gmail.com', // list of receivers
+			from: '"Thanh Dat" <thanhdat@gmail.com>', // sender address
+			to: 'cuong@techmaster.vn,thanhdat21293@gmail.com', // list of receivers
 			subject: 'Tất cả bài viết với từ khóa "Fullstack"', // Subject line
-			//text: 'Hello world ?', // plain text body
-			html: content // html body
+			html: 'Dear anh Cường, <br> <br>' + content + '<br> Đạt,' // html body
 		};
 
 		// send mail with defined transport object

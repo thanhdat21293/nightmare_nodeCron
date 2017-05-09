@@ -8,8 +8,8 @@ const cron = require('node-cron');
 
 
 app.get('/', function(req, res){
-    var task = cron.schedule('0 54 16 * * *', function(){
-      console.log('running every minute 1, 2, 4 and 5');
+    var task = cron.schedule('0 53 9 * * *', function(){
+      console.log('running');
         require('./basic.js');
     });
     task.start();
